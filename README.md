@@ -1,5 +1,7 @@
 # 🚀 Prueba Técnica Inlaze - Automatización de Pruebas
 
+## Quality Assurance Automation Cypress
+
 ## 🛠️ Requisitos
 
 - Node.js (versión 14 o superior)
