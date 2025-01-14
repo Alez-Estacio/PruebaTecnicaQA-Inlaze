@@ -1,6 +1,5 @@
 # 🚀 Prueba Técnica Inlaze - Automatización de Pruebas
 
-=======
 ## Quality Assurance Automation Cypress
 
 
