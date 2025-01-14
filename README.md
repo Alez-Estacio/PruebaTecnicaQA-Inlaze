@@ -1,4 +1,4 @@
-# 🚀 Prueba Técnica Inlaze - Automatización de Pruebas
+## 🚀 Prueba Técnica Inlaze - Automatización de Pruebas
 
 
 
