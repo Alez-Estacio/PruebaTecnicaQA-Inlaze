@@ -1,0 +1,30 @@
+PLANTILLA DE REPORTE DE ERROR
+
+N£mero de Bug
+ 001
+ID del Caso de Prueba
+TC 002
+Nombre del Tester
+Alezander Estacio
+D¡a del Reporte
+14/01/2025
+Sistema Operativo
+Windows 11
+Browser
+Edge, Chrome
+Asignado a:
+Itachi Uchiha
+
+
+Pasos para la reproducci¢n
+1.	 Navegar a la p gina de inicio de sesi¢n.
+2.	 Llenar el campo "Nombre completo" con una sola palabra (por ejemplo, "John").
+3.	 Completar los dem s campos.
+4.	 Intentar enviar el formulario.
+
+Resultado Esperado
+Deber¡a mostrarse un mensaje de error indicando que el campo de nombre requiere dos palabras.
+
+Resultado Actual
+El formulario no se env¡a y el bot¢n de "Sign In" no se habilita.
+

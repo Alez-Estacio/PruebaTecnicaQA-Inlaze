@@ -1,0 +1,34 @@
+PLANTILLA DE REPORTE DE ERROR
+
+N£mero de Bug
+ 002
+ID del Caso de Prueba
+TC 003
+Nombre del Tester
+Alezander Estacio
+D¡a del Reporte
+14/01/2025
+Sistema Operativo
+Windows 11
+Browser
+Edge, Chrome
+Asignado a:
+Kira Toriyama
+
+
+Pasos para la reproducci¢n
+ 
+1.	Navegar a la p gina de inicio de sesi¢n.
+2.	 Llenar los campos "Nombre completo", "Correo electr¢nico" y "Contrase¤a".
+3.	Confirmar la contrase¤a.
+4.	Enviar el formulario.
+5.	Repetir los pasos de 1 a 4 usando los mismos datos al menos 2 o 3 veces.
+
+
+Resultado Esperado
+El sistema deber¡a validar que el correo electr¢nico ya est  registrado y evitar la duplicaci¢n de 
+registros.
+
+Resultado Actual
+El sistema permite registrar los mismos datos como nuevos en la base de datos m£ltiples veces.
+

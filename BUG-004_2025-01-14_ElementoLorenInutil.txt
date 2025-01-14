@@ -1,0 +1,33 @@
+PLANTILLA DE REPORTE DE ERROR
+
+N£mero de Bug
+ 004
+ID del Caso de Prueba
+TC 007
+Nombre del Tester
+Alezander Estacio
+D¡a del Reporte
+14/01/2025
+Sistema Operativo
+Windows 11
+Browser
+Edge, Chrome
+Asignado a:
+Axel Rose
+
+
+Pasos para la reproducci¢n
+ 
+1.	 Navegar a la p gina de login.
+2.	Ingresar con las credenciales correctas.
+3.	Observar el elemento seleccionable con el texto "Loren".
+4.	Seleccionar el elemento.
+
+
+Resultado Esperado
+El elemento "Loren" no deber¡a estar presente o, si debe estarlo, deber¡a llevar a una p gina 
+relevante.
+
+Resultado Actual
+El elemento "Loren" es seleccionable pero no lleva a ninguna parte.
+
