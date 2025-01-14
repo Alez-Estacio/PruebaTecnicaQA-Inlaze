@@ -1,0 +1,22 @@
+{
+  "name": "inlaze-qa-automation",
+  "version": "1.0.0",
+  "description": "Pruebas automatizadas para Inlaze",
+  "scripts": {
+    "cy:run": "cypress run --config-file cypress/config/edge.config.js --headless",
+    "cy:open": "cypress open --browser edge",
+    "test": "cypress run --config-file cypress/config/edge.config.js --headless",
+    "test:headed": "cypress run --config-file cypress/config/edge.config.js"
+  },
+  "dependencies": {
+    "cypress": "12.17.0",
+    "cypress-wait-until": "^3.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-loader": "^9.2.1",
+    "mochawesome": "^7.1.3",
+    "prettier": "^3.4.2"
+  }
+}

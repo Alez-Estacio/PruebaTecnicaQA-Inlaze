@@ -1,0 +1,24 @@
+[
+  {
+    "id": 0,
+    "fullName": "John Doe",
+    "singleName": "John",
+    "email": "john.doe@example.com",
+    "password": "3042039487Fi",
+    "confirmPassword": "3042039487Fi",
+    "shortPassword": "123"
+  },
+  {
+    "id": 1, 
+    "fullName": "Jo",
+    "email": "john.example.com",
+    "password": "123",
+    "confirmPassword": "h",
+    "2password": "3042039487!",
+    "noNumberPassword": "TestPass!",
+    "differentPassword": "Diferente123!"
+  }
+]
+
+
+
