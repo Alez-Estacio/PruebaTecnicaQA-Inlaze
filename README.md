@@ -1,10 +1,12 @@
 # 🚀 Prueba Técnica Inlaze - Automatización de Pruebas
 
+
 ## Quality Assurance Automation Cypress
 
 
 ## 🛠️ Requisitos
 
+-VSC version 1.96.1
 - Node.js (versión 14 o superior)
 - npm (versión 6 o superior)
 - Git
@@ -47,7 +49,8 @@
     ```
 
 ## 🧪 Ejecución de Pruebas
-1.npx cypress open.
+1.Abre tu consola de comandos o la terminal en visual studio code y ejecuta lo siguiente npx cypress open,
+elige la carpeta en donde quieres ejecutar el proyecto.
 
 2.Selecciona el navegador Edge o el de tu preferencia y Click en el boton Start E2E Testing in Edge.
 
