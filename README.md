@@ -1,6 +1,8 @@
 # 🚀 Prueba Técnica Inlaze - Automatización de Pruebas
 
-#Quality Assurance Automation Cypress
+=======
+## Quality Assurance Automation Cypress
+
 
 ## 🛠️ Requisitos
 
@@ -12,8 +14,9 @@
 
 1. Clona el repositorio en tu máquina local:
     ```sh
-    git clone <URL_DEL_REPOSITORIO>
-    cd <NOMBRE_DEL_REPOSITORIO>
+    git clone https://github.com/Alez-Estacio/PruebaTecnicaQA-Inlaze.git
+    cd PruebaTecnicaQA-Inlaze
+
     ```
 
 2. Instala las dependencias del proyecto:
