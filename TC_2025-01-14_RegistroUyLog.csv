@@ -1,0 +1,98 @@
+Casos de Pruebas de Software;;;;;;;;;
+Elaborado por: Alezander Estacio;;;;;;;;;
+Proyecto: Prueba Técnica QA - Inlaze;;;;;;;;;
+Ciclo de Pruebas: [Suite de Pruebas de Registro y Login];;;;;;;;;
+;;;;;;;;;
+Id;Descripción;Fecha;Área Funcional / Sub proceso;Funcionalidad / Característica;Datos de Entrada;Pasos a Seguir;Resultado Esperado;Requerimientos de Ambiente de Pruebas;Dependencias con otros casos de Prueba
+TC 001;Verificar que se pueda registrar un usuario con nombre, email y contraseña válidos.;14/01/2025;Registro de Usuario;Formulario de Registro.;"Nombre: ""John Doe""
+
+Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi""                  Confirmar contraseña:""3042039487Fi""";"1. Navega a la página de inicio de sesión.
+
+2. Llena el campo ""Nombre completo"", ""Correo electrónico"" y las contraseñas.
+
+3. Envía el formulario.
+
+5. Verifica que aparezca ""Successful registration!""";El sistema debe permitir registrar un usuario con nombre, email y contraseña válidos.;Navegador web, servidor disponible;Ninguno
+TC 002;Validar que el campo de nombre acepte mínimo 2 palabras(primer nombre y apellido).;14/01/2025;Registro de Usuario;Validación de Campo de Nombre.;"Nombre: ""John""
+
+Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi"" Repetir  Confirmar contraseña:""3042039487Fi""";"1. Llena el campo ""Nombre completo"" con una sola palabra.
+
+2. Completa los demás campos.
+
+3. Intenta enviar el formulario.
+
+4. Verifica la validación del nombre.";El campo de nombre debe aceptar mínimamente dos palabras y mostrar un mensaje de error si no se cumple.;Navegador web, servidor disponible;Ninguno
+TC 003;Verificar que el email cumpla con el formato estándar y sea único en la base de datos.;14/01/2025;Registro de Usuario;Validación de Campo de Email.;"Nombre: ""John Doe""
+
+Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi""                   Confirmar contraseña:""3042039487Fi""";"1. Llena los campos ""Nombre completo"", ""Correo electrónico"" y las contraseñas.
+
+2. Envía el formulario.
+
+3. Verifica ""Successful registration!"".
+
+4. Prueba con las mismas credenciales nuevamente.";"El email debe cumplir con el formato estándar (e.g., usuario@dominio.com) y ser único en la base de datos; en caso contrario, se debe mostrar un mensaje de error.";Navegador web, servidor disponible, base de datos de usuarios;Ninguno
+TC 004;Validar que la contraseña cumpla con los requisitos de longitud y caracteres.;14/01/2025;Registro de Usuario;Validación de Campo de Contraseña.;"Nombre: ""John Doe""
+
+Email: ""john.doe@example.com""
+
+Contraseña: ""123""                                     Confirmar contraseña:""123""";"1. Llena el campo ""Contraseña"" con una corta.
+
+2. Completa los demás campos.
+
+3. Intenta enviar el formulario.
+
+4. Verifica los mensajes de validación.";"La contraseña debe cumplir con los requisitos de longitud (mínimo de 8 caracteres) y contener una combinación de letras, números y caracteres especiales; si no, se debe mostrar un mensaje de error.";Navegador web, servidor disponible;Ninguno
+TC 005;Comprobar que el formulario no se envíe si los campos obligatorios no están completos.;14/01/2025;Registro de Usuario;Validación de Campos Obligatorios.;"Nombre: ""Jo""
+
+Email: ""john.example.com""
+
+Contraseña: ""123""                                      Confirmar contraseña:""""";"1. Llena los campos incompletamente.
+
+2. Envía el formulario.
+
+3. Verifica el mensaje ""Passwords do not match"".";El formulario no debe enviarse si los campos obligatorios no están completos, y debe informar al usuario con un mensaje de error señalando los campos faltantes.;Navegador web, servidor disponible;Ninguno
+TC 006;Verificar que el sistema informe si las contraseñas ingresadas no coinciden.;14/01/2025;Registro de Usuario;Validación de Contraseñas.;"Nombre: ""John Doe""
+
+Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi""                   Confirmar contraseña:""123""";"1. Llena ""Nombre completo"", ""Correo electrónico"" y las contraseñas diferentes.
+
+2. Envía el formulario.
+
+3. Verifica ""Passwords do not match"".";Si las contraseñas ingresadas no coinciden, el sistema debe informar al usuario mediante un mensaje de error y prevenir el envío del formulario.;Navegador web, servidor disponible;Ninguno
+TC 007;Verificar que el usuario pueda loguearse con el email y contraseña correctos.;14/01/2025;Login de Usuario;Formulario de Login.;"Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi"" ";"1. Ingresa ""Correo electrónico"" y la contraseña correcta.
+
+2. Envía el formulario.
+
+3. Verifica el inicio de sesión exitoso.";El sistema debe permitir que el usuario se loguee con su email y contraseña correctos.;Navegador web, servidor disponible, base de datos de usuarios registrados.;Ninguno
+TC 008;Validar que el formulario de login no se envíe si los campos no están completos.;14/01/2025;Login de Usuario;Validación de Campos Completos.;"Email: ""john.doe@example.com""
+
+Contraseña: """"";"1. Ingresa solo ""Correo electrónico"".
+
+2. Intenta enviar el formulario.
+
+3. Verifica que el formulario no permita el envío.";El formulario de login no debe enviarse si los campos de email y contraseña no están completos, mostrando un mensaje de error indicando los campos faltantes.;Navegador web, servidor disponible;Ninguno
+TC 009;Comprobar que al ingresar se muestre el nombre del usuario.;14/01/2025;Login de Usuario;Pantalla de Bienvenida.;"Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi"" ";"1. Ingresa ""Correo electrónico"" y la contraseña.
+
+2. Envía el formulario.
+
+3. Verifica que se muestre el nombre del usuario.";Al ingresar correctamente, debe mostrarse el nombre del usuario como confirmación de que se ha iniciado sesión.;Navegador web, servidor disponible;TC 007
+TC 010;Verificar que la plataforma permita cerrar la sesión correctamente.;14/01/2025;Login de Usuario;Funcionalidad de Cierre de Sesión.;"Email: ""john.doe@example.com""
+
+Contraseña: ""3042039487Fi"" ";"1. Ingresa ""Correo electrónico"" y la contraseña.
+
+2. Envía el formulario.
+
+3. Haz clic en ""Logout"".
+
+4. Verifica que el usuario regrese a la página de inicio de sesión.";La plataforma debe permitir cerrar la sesión correctamente, redirigiendo al usuario a la pantalla de login o página de inicio.;Navegador web, servidor disponible;TC 007
