@@ -6,7 +6,7 @@
 
 ## 🛠️ Requisitos
 
--VSC version 1.96.1
+- VSC (version 1.96.1) 
 - Node.js (versión 14 o superior)
 - npm (versión 6 o superior)
 - Git
